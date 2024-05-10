@@ -50,7 +50,7 @@ numpy
 diffusers
 transformers 
 ftfy 
-gradio==3.24.0
+gradio 
 
 # API 
 fastapi

@@ -141,11 +141,11 @@ def bgChanging(image, prompt, negative_prompt):
     output_Image = diffusion_gen.inpaint_image(image=image, mask=ImageOps.invert(mask), prompt=prompt, negative_prompt=negative_prompt)
 
     # # Execute
-    post_processing = PostProcessing(image, mask, output_Image)
-    output_final = post_processing.overlay_object2output()
+    # post_processing = PostProcessing(image, mask, output_Image)
+    # output_final = post_processing.overlay_object2output()
     # output_final.save(output_final_url)
 
-    return output_final
+    return output_Image
 
 
 def inpaint(image, mask, prompt, negative_prompt):
